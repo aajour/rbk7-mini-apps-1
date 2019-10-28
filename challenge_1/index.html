@@ -8,14 +8,14 @@
     <title>Tic Tac Toe!</title>
     <style>
         body {
-            background-color: coral;
+            background-color: #16a085;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
 
-        .myButton1 {
+        .boardItem {
             width: 50px;
             height: 50px;
             cursor: pointer;
@@ -32,32 +32,41 @@
             display: flex;
             flex-direction: column;
         }
+        #reset{
+            cursor: pointer;
+            width: 55px;
+            height: 30px;
+            margin-top: 10px;
+        }
     </style>
 </head>
 
 <body>
     <h1>Tic Tac Toe!</h1>
     <h2>Player: <span id="currentPlayer">X</span> turn</h2>
+    <h2>Result: X: <span id="xScore">0</span> || O: <span id="yScore">0</span></h2>
     <div class="buttons">
         <div>
-            <input type="button" value=" " id="0" class="myButton1" onclick="handleBtnClick(this.id)"></input>
-            <input type="button" value=" " id="1" class="myButton1" onclick="handleBtnClick(this.id)"></input>
-            <input type="button" value=" " id="2" class="myButton1" onclick="handleBtnClick(this.id)"></input>
+            <input type="button" value=" " id="0" class="boardItem" onclick="handleBtnClick(this.id)"></input>
+            <input type="button" value=" " id="1" class="boardItem" onclick="handleBtnClick(this.id)"></input>
+            <input type="button" value=" " id="2" class="boardItem" onclick="handleBtnClick(this.id)"></input>
 
         </div>
         <div>
-            <input type="button" value=" " id="3" class="myButton1" onclick="handleBtnClick(this.id)"></input>
-            <input type="button" value=" " id="4" class="myButton1" onclick="handleBtnClick(this.id)"></input>
-            <input type="button" value=" " id="5" class="myButton1" onclick="handleBtnClick(this.id)"></input>
+            <input type="button" value=" " id="3" class="boardItem" onclick="handleBtnClick(this.id)"></input>
+            <input type="button" value=" " id="4" class="boardItem" onclick="handleBtnClick(this.id)"></input>
+            <input type="button" value=" " id="5" class="boardItem" onclick="handleBtnClick(this.id)"></input>
 
         </div>
         <div>
-            <input type="button" value=" " id="6" class="myButton1" onclick="handleBtnClick(this.id)"></input>
-            <input type="button" value=" " id="7" class="myButton1" onclick="handleBtnClick(this.id)"></input>
-            <input type="button" value=" " id="8" class="myButton1" onclick="handleBtnClick(this.id)"></input>
+            <input type="button" value=" " id="6" class="boardItem" onclick="handleBtnClick(this.id)"></input>
+            <input type="button" value=" " id="7" class="boardItem" onclick="handleBtnClick(this.id)"></input>
+            <input type="button" value=" " id="8" class="boardItem" onclick="handleBtnClick(this.id)"></input>
    </div>
 
     </div>
+    <button id="reset" onclick="reset()">Reset!</button>
+
     <script src="app.js"></script>
 </body>
 
