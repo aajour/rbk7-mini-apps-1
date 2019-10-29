@@ -1,0 +1,30 @@
+{
+  "name": "csv-reports-generator",
+  "version": "1.0.0",
+  "description": "CSV Reports Generator By JS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aajour/rbk7-mini-apps-1.git"
+  },
+  "keywords": [
+    "CSV",
+    "Generote",
+    "Reports"
+  ],
+  "author": "Ahmed Ajour",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aajour/rbk7-mini-apps-1/issues"
+  },
+  "homepage": "https://github.com/aajour/rbk7-mini-apps-1#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4"
+  }
+}
